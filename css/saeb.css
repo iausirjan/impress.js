@@ -99,11 +99,11 @@ text-align:center;
 }
 
 .beat{
-	animation: beat .55s infinite alternate;
+	animation: beat 1.35s infinite alternate;
 	transform-origin: center;
 }
 
 /* Heart beat animation */
 @keyframes beat{
-	to { transform: scale(1.4); }
+	to { transform: scale(1.1); }
 }
