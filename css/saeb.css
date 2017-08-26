@@ -1,13 +1,15 @@
 @import url("fonts.css");
-#start q{
-
+#start q
+{
 	direction: rtl;
 	text-align: center;
 	font-family: Gandom;
 	font-size:85% !important;
 }
-#start {
+#start,
+#yvirtual {
 width:800px !important;
+direction: rtl;
 }
 
 .slide q {
@@ -34,7 +36,8 @@ font-family: Gandom !important;
     ... so we define display to `inline-block` to enable transforms and
     transition duration to 0.5s ...
 */
-#start b {
+#start b,
+#yvirtual b {
     display: inline-block;
     -webkit-transition: 0.5s;
     -moz-transition:    0.5s;
@@ -47,7 +50,8 @@ font-family: Gandom !important;
     ... and we want 'positioning` word to move up a bit when the step gets
     `present` class ...
 */
-#start.present .positioning {
+#start.present .positioning,
+#yvirtual.present .positioning {
     -webkit-transform: translateY(-10px);
     -moz-transform:    translateY(-10px);
     -ms-transform:     translateY(-10px);
@@ -58,7 +62,8 @@ font-family: Gandom !important;
 /*
     ... 'rotating' to rotate a quarter of a second later ...
 */
-#start.present .rotating {
+#start.present .rotating ,
+#yvirtual.present .rotating {
     -webkit-transform: rotate(-10deg);
     -moz-transform:    rotate(-10deg);
     -ms-transform:     rotate(-10deg);
@@ -75,7 +80,8 @@ font-family: Gandom !important;
 /*
     ... and 'scaling' to scale down after another quarter of a second.
 */
-#start.present .scaling {
+#start.present .scaling ,
+#yvirtual.present .scaling {
     -webkit-transform: scale(0.7);
     -moz-transform:    scale(0.7);
     -ms-transform:     scale(0.7);
@@ -202,4 +208,71 @@ text-align:center;
 #cloudlayers .thoughts {
     font-size: 90px;
     line-height: 150px;
+}
+
+#virtualization {
+    width: 600px;
+    text-align: left;
+    font-size: 40px;
+    line-height: 1;
+}
+
+#virtualization b {
+    display: block;
+    font-size: 150px;
+    line-height: 250px;
+}
+
+#virtualization .thoughts {
+    font-size: 90px;
+    line-height: 150px;
+}
+.substep {
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+  }
+  
+  body {
+    -webkit-transition: background 0;
+    -moz-transition:    background 0;
+    -ms-transition:     background 0;
+    -o-transition:      background 0;
+    transition:         background 0;
+  }
+  
+  .substep {
+    opacity: 0;
+  }
+  
+  /* override for animated substeps */
+  .substep.anim {
+    opacity: 1;
+  }
+  
+  .substep.active {
+    opacity: 1;
+  }
+  
+  
+  svg .substep.previous {
+    opacity: 1; 
+  }
+  
+  .substep.previous {
+    opacity: 0.75;
+  }
+  .wrap {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+li {
+    font-size: 70% !important;
+}
+ul {
+	list-style-position: outside;
+	list-style-type: square;
 }
