@@ -1,4 +1,12 @@
 @import url("fonts.css");
+img {
+    display: block;
+    margin: auto;
+    width: 120%;
+}
+#whatiscloud img {
+    width: 100%;
+}
 #start q
 {
 	direction: rtl;
@@ -7,9 +15,11 @@
 	font-size:85% !important;
 }
 #start,
-#yvirtual {
+#yvirtual,
+#hypotheses
+ {
 width:800px !important;
-direction: rtl;
+direction: rtl !important;
 }
 
 .slide q {
@@ -219,7 +229,7 @@ text-align:center;
 
 #virtualization b {
     display: block;
-    font-size: 150px;
+    font-size: 120px;
     line-height: 250px;
 }
 
