@@ -2,10 +2,10 @@
 img {
     display: block;
     margin: auto;
-    width: 120%;
+    width: 100%;
 }
 #whatiscloud img {
-    width: 100%;
+    width: 90%;
 }
 #start q
 {
@@ -16,7 +16,8 @@ img {
 }
 #start,
 #yvirtual,
-#hypotheses
+#hypotheses,
+#choi
  {
 width:800px !important;
 direction: rtl !important;
@@ -202,19 +203,25 @@ text-align:center;
     -o-transform:      translateZ(0px);
     transform:         translateZ(0px);
 }
-#cloudlayers {
+#cloudlayers,
+#review {
     width: 600px;
     text-align: center;
     font-size: 60px;
     line-height: 1;
 }
 
-#cloudlayers b {
+#cloudlayers b
+ {
     display: block;
     font-size: 250px;
     line-height: 250px;
 }
-
+#review b {
+    display: block;
+    font-size: 120px;
+    line-height: 150px;
+}
 #cloudlayers .thoughts {
     font-size: 90px;
     line-height: 150px;
@@ -285,4 +292,7 @@ li {
 ul {
 	list-style-position: outside;
 	list-style-type: square;
+}
+#inli {
+    line-height: 20px !important;
 }
