@@ -353,3 +353,6 @@ height: initial;
     text-align: center;
     font-size: 90%;
 }
+#vaiolation p {
+	font-size: 50% !important;
+}
