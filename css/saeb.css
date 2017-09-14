@@ -318,6 +318,10 @@ ul {
     text-align: right;
   /*  font-size: 70% !important;*/
 }
-#questions  q h2{
-    font-size: 45px;
+#questions  q h2,
+#environment q h2{
+    font-size: 35px;
+}
+#environment{
+    direction: rtl;
 }
