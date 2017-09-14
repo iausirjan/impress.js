@@ -315,6 +315,8 @@ ul {
     text-shadow: 0px 0px 0px yellow !important; 
     color: yellow;
 }
+li,
+#vmonpm,
 #questions,
 #environment,
 #consolidation{
@@ -324,7 +326,9 @@ ul {
 }
 #questions  q h2,
 #consolidation  q h2,
+q h2,
 #environment q h2{
+    direction: rtl;
     font-size: 35px;
 }
 /* 
@@ -332,3 +336,20 @@ img{
     margin: auto;
     width: 63%
 } */
+#f3-1{
+height: initial;
+}
+.title-center{
+    direction: rtl;
+    text-align: center;
+}
+.slide-body{
+    font-family: Vazir;
+    direction: rtl;
+    font-size: 80%;
+}
+.title-center-smaller{
+    direction: rtl;
+    text-align: center;
+    font-size: 90%;
+}
