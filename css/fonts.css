@@ -6,3 +6,8 @@
     font-family: Gandom;
     src: url(./fonts/Gandom.woff);
 }
+
+@font-face {
+    font-family: fawesome;
+    src: url(./fonts/fontawesome-webfont.woff);
+}
