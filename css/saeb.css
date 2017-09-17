@@ -308,6 +308,12 @@ ul {
     margin: auto;
     font-size: 5em;
     text-shadow: 10px 50px 15px black; 
+}#history {
+    color: black;
+    text-align: center;
+    margin: auto;
+    font-size: 5em;
+    text-shadow: 10px 50px 15px black; 
 }
 #fa {
     font-family: fawesome;
